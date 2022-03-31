@@ -13,6 +13,55 @@
 
 ### 代辦事項
 #### 功能項目
+1.
+```
+def long_a_position and short_a_position and close_position
+```
+
+2.
+```
+def set_current_position
+```
+
+3.
+```
+current_position=-1,0,1,2(-1:short,0:close,1:long,2:stop_profit or loss)
+```
+
+4.
+```
+if signal[0] > 0 and (current_position == 1 or current_postion == 2):
+     None   
+else:
+     long_a_position
+     current_position = 1
+     
+if signal[0] > 0 and (current_position == 1 or current_postion == 2):
+     None   
+else:
+     short_a_posision
+     current_position = 1
+```
+5.
+```
+if (cross_signal[0] == 1) or (cross_signal[0] == -1):
+    print('行情反轉重設目前持倉模式')
+    current_position = 0
+```
+
+6.
+```
+dic={0.05:0.03,
+    0.08:0.05,
+    0.12:0.08
+    0.15:0.12
+    0.18:0.15}
+equity_percent_change = current_equity/initial_equity
+
+
+
+
+```
 
 
 
